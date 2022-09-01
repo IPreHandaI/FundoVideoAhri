@@ -1,0 +1,361 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+/*=========================MAIN===========================*/
+
+.banner{
+  background: #111;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding: 0 100px;
+  background: #111;
+  display: flex;
+  align-items: center;
+}
+
+
+#h1{
+  color: #fff;
+  margin: 5% 0 0 35%;
+}
+
+#a{
+  margin: 5% 0 0 35%;
+  border: transparent;
+  border-radius: 4%;
+  width: 60%;  
+  background-color: #492163;
+  display: flex;
+  padding: 10px;
+}
+
+#a2{
+  border: transparent;
+  border-radius: 4%;
+  width: 60%;
+  background-color: #492163;
+  display: flex;
+}
+
+#botao{
+  margin: 6.5% 0 0 73%;
+  border: transparent;
+  border-radius: 4%;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+#botao:hover{
+  padding: 5%;
+  margin: 3% 0 0 73%;
+  background-color: #2d183a;
+  transition: 0.5s;
+}
+
+#botao2{
+  margin: 2% 0 0 17%;
+  border: transparent;
+  border-radius: 4%;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+#botao2:hover{
+  padding: 5%;
+  background-color: #2d183a;
+  transition: 0.5s;
+}
+.banner .imgBox{
+  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  z-index: 2;
+}
+
+.banner .imgBox img{
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  z-index: 10;
+}
+
+
+
+.banner:before{
+  content: '';
+  position: absolute;
+  right: 90vh;
+  top: 0;
+  width: 26rem;
+  height: 100%;
+  background: #492163;
+  transform-origin: top;
+  transform: skewX(-25deg);
+  z-index: 1;
+}
+
+#img{
+  opacity: 0;
+  animation: fadeInImg 1s both;
+  bottom: 0;
+  overflow: hidden;
+  transform: translateY(100px);
+}
+
+#img:after{
+  overflow: hidden;
+  transform: translateY(0px);
+}
+@keyframes fadeInImg{
+  from{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+
+
+
+.banner2{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 100px;
+  background: #111;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* coluna amarela */ 
+
+.banner2:before{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30vw;
+  height: 100%;
+  background: rgb(54, 244, 199);
+  transform-origin: top;
+  transform: skewX(-25deg);
+  z-index: 1;
+}
+
+/* video bg */ 
+
+.banner2 video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.10;  
+  pointer-events: none;
+}
+
+/* caixa de texto do banner */ 
+
+
+.banner2 .imgBox2{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  z-index: 2;
+}
+
+.banner2 .imgBox2 img{
+  position: absolute;
+  bottom: 0;
+  height: 90%;
+  z-index: 10000;
+  right: 1vh;
+}
+
+.textBox2{
+  width: 50%;
+  display: grid;
+}
+
+#h2login{
+  width: 74%;
+  color: aliceblue;
+}
+
+#aa{
+  width: 70%;
+  height: 60%;
+  margin: 0 0 10% 0;
+  border-radius: 1vh;
+  background-color: rgb(50, 172, 143);
+  border: 0;
+  color: aliceblue;
+}
+
+#botaologin{
+  background-color: rgb(50, 172, 143);
+  width: 10%;
+  padding: 1%;
+  border-radius: 1vh;
+}
+
+#img2{
+  opacity: 0;
+  animation: fadeInImg 1s both;
+  bottom: 0;
+  overflow: hidden;
+  transform: translateY(100px);
+}
+
+#img2:after{
+  overflow: hidden;
+  transform: translateY(0px);
+}
+@keyframes fadeInImg{
+  from{
+    overflow: hidden;
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to{
+    overflow: hidden;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+
+.banner video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.10;  
+  pointer-events: none;
+}
+
+
+.banner .textBox{
+  position: relative;
+  max-width: 70%;
+  z-index: 2;
+}
+
+.banner .textBox h2{
+  color: #fff;
+  font-size: 3em;
+}
+
+.banner .textBox p{
+  color: #fff;
+  font-size: 1.1em;
+  margin: 5px 0 25px;
+}
+
+.banner .textBox a{
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  color: #111;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1;
+}
+
+.banner .textBox a:hover{
+  background-color: #492163;
+}
+
+/* imagem do banner */ 
+
+.banner .imgBox{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  z-index: 2;
+}
+
+.banner .imgBox img{
+  position: absolute;
+  bottom: 0;
+  max-width: 155vh;
+  height: 90%;
+  z-index: 10000;
+}
+
+
+/*==============================PRODUTOS==================================*/
+
+.ahridancando{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 100px;
+  background: #111;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.ahridancando video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.10;  
+  pointer-events: none;
+}
+
+#coldancando{
+  display: flex;
+}
+
+#skins, #cromas, #musicas{
+  margin: 6.5vh;
+}
+
+.forma{
+    content: '';
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    height: 10%;
+    background: #492163;
+    z-index: -1;
+}
+
+#aaaaaaaaaaaaa{
+  height: 100vh;
+  width: 100vh;
+}
